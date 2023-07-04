@@ -7,6 +7,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbuttonComponent } from './components/navbar/navbutton/navbutton.component';
 import { NavlogoComponent } from './components/navbar/navlogo/navlogo.component';
 import { HomeComponent } from './components/home/home.component';
+import { SpinnerComponent } from './components/shared/spinner/spinner.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,16 @@ import { HomeComponent } from './components/home/home.component';
     NavbuttonComponent,
     NavlogoComponent,
     HomeComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatProgressSpinnerModule,
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
