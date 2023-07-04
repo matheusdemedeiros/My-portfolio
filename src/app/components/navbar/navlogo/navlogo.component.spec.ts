@@ -17,7 +17,7 @@ describe('NavlogoComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create NavlogoComponent', () => {
     expect(component).toBeTruthy();
   });
 });
