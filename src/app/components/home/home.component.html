@@ -1,10 +1,12 @@
 <section id="home-main-section">
-  <div class="presentation__image">
-    <div class="presentation__overlay"></div>
-    <p class="presentation__image__text">{{ presentationImageContent }}</p>
-  </div>
-  <div class="presentation__text">
-    <h1 class="presentation__text__title">{{ presentationTitle }}</h1>
-    <p class="presentation__text__description" [innerHTML]="presentationDescription"></p>
+  <div class="home-contaner">
+    <div class="presentation__image">
+      <div class="presentation__overlay"></div>
+      <p class="presentation__image__text">{{ presentationImageContent }}</p>
+    </div>
+    <div class="presentation__text">
+      <h1 class="presentation__text__title">{{ presentationTitle }}</h1>
+      <p class="presentation__text__description" *ngFor="let description of descriptions" [innerHTML]="description"></p>
+    </div>
   </div>
 </section>

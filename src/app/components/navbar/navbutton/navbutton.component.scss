@@ -1,13 +1,13 @@
 .navbutton {
-  padding: 12px;
   background-color: #9273FA;
-  color: #FFFFFF;
   border-radius: 11px;
+  color: #FFFFFF;
+  justify-content: center;
+  padding: 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
   text-decoration: none;
-  margin: 5px;
+  margin: 8px;
 }
 
 .navbutton:hover {

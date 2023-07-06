@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
 
   public presentationImageContent!: string;
   public presentationTitle!: string;
-  public presentationDescription!: string;
+  public descriptions: string[] = [];
 
   public ngOnInit(): void {
     this.setPresentationImageContent();
@@ -26,6 +26,7 @@ export class HomeComponent implements OnInit {
   }
 
   private setPresentationDescription() {
-    this.presentationDescription = "As a <strong>C#</strong> developer with a focus on backend, I am excited to expand my knowledge into the world of frontend development with <strong>Angular</strong>. Over the past few months, I have been dedicated to learning this new area and acquiring valuable skills!!";
+    this.descriptions.push("As a <strong>C#</strong> developer with a focus on backend, I am excited to expand my knowledge into the world of frontend development with <strong>Angular</strong>.");
+    this.descriptions.push("Over the past few months, I have been dedicated to learning this new area and acquiring valuable skills!!");
   }
 }

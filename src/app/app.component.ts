@@ -19,8 +19,6 @@ export class AppComponent implements OnInit {
     this.appLoading();
   }
 
-
-
   public setTitle(title: string) {
     this.titleService.setTitle(title);
   }
