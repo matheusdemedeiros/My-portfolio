@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .navlogo__img {
@@ -18,4 +19,15 @@
   font-weight: bolder;
   padding-left: 5px;
   color: #4A434A;
+}
+
+@media screen and (max-width: 900px) {
+  .navlogo__text {
+    font-size: 1.2rem;
+  }
+
+  .navlogo__img {
+    max-width: 100px;
+    max-height: 35px;
+  }
 }
