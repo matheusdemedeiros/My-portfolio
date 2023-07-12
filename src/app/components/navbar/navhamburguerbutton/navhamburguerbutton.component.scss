@@ -1,0 +1,22 @@
+:root {
+  --line-color: #000000;
+}
+
+.hamburgur__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.hamburgur__container:hover{
+  opacity: 80%;
+}
+
+.nav__hamburguer__line {
+  width: 30px;
+  height: 3px;
+  margin: 3px 0;
+  background-color: #9273FA;
+}

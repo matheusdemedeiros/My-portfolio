@@ -19,6 +19,10 @@
   flex-direction: row;
 }
 
+.navbar__hamburguer__button {
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .navbar {
     padding: 0 9% 0 9%;
@@ -27,6 +31,10 @@
 
   .navbar__buttons {
     display: none;
+  }
+
+  .navbar__hamburguer__button {
+    display: flex;
   }
 
 }

@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SpinnerComponent } from './components/shared/spinner/spinner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { NavhamburguerbuttonComponent } from './components/navbar/navhamburguerbutton/navhamburguerbutton.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     NavlogoComponent,
     HomeComponent,
     SpinnerComponent,
+    NavhamburguerbuttonComponent,
   ],
   imports: [
     BrowserModule,
