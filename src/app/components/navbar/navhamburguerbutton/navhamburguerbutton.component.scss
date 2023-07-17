@@ -2,15 +2,16 @@
   --line-color: #000000;
 }
 
-.hamburgur__container {
+.hamburguer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: none;
+  position: relative;
 }
 
-.hamburgur__container:hover{
+.hamburguer__container:hover {
   opacity: 80%;
 }
 
@@ -19,4 +20,27 @@
   height: 3px;
   margin: 3px 0;
   background-color: #9273FA;
+}
+
+.checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hamburger__lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

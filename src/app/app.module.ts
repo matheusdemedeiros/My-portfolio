@@ -11,6 +11,8 @@ import { SpinnerComponent } from './components/shared/spinner/spinner.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { NavhamburguerbuttonComponent } from './components/navbar/navhamburguerbutton/navhamburguerbutton.component';
+import { SlidemenuComponent } from './components/navbar/slidemenu/slidemenu.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,15 @@ import { NavhamburguerbuttonComponent } from './components/navbar/navhamburguerb
     HomeComponent,
     SpinnerComponent,
     NavhamburguerbuttonComponent,
+    SlidemenuComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressSpinnerModule,
-
+    CommonModule,
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

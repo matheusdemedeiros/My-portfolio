@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  public slideMenuIsVisible: boolean = false;
+
+  public toogleCheck(hamburguerIsChecked: boolean) {
+    this.slideMenuIsVisible = hamburguerIsChecked;
+  }
 
 }

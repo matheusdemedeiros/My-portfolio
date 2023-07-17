@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navhamburguerbutton',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class NavhamburguerbuttonComponent {
 
+  public isChecked: boolean = false;
+  @Output() public toggleHamburgerCheckEvent = new EventEmitter<boolean>();
+
+  public toggleHamburgerCheck() {
+    this.isChecked = !this.isChecked;
+    this.toggleHamburgerCheckEvent.emit(this.isChecked);
+  }
 }
