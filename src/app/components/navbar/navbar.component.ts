@@ -11,5 +11,4 @@ export class NavbarComponent {
   public toogleCheck(hamburguerIsChecked: boolean) {
     this.slideMenuIsVisible = hamburguerIsChecked;
   }
-
 }
