@@ -8,8 +8,8 @@
   align-items: center;
   text-decoration: none;
   margin: 8px;
-}
 
-.navbutton:hover {
-  background-color: #7159C1;
+  &:hover {
+    background-color: #7159C1;
+  }
 }
