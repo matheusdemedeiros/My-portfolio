@@ -23,7 +23,9 @@ export class SlidemenuComponent implements OnChanges, OnInit, AfterViewInit {
   }
 
   public ngOnChanges(changes: SimpleChanges): void {
-    this.showMenu();
+    if (this.checkPropertyChanges(changes, 'isVisible')) {
+      this.showMenu();
+    }
   }
 
   public showMenu() {
@@ -31,6 +33,17 @@ export class SlidemenuComponent implements OnChanges, OnInit, AfterViewInit {
     this.slideMenuNativeElement?.classList.contains(className)
       ? this.slideMenuNativeElement?.classList.remove(className)
       : this.slideMenuNativeElement?.classList.add(className);
+  }
+
+  private checkPropertyChanges(changes: SimpleChanges, propertyName: string): boolean {
+    if (changes[propertyName]) {
+      const propertyChanged = changes[propertyName];
+      if (propertyChanged.currentValue !== propertyChanged.previousValue) {
+        return true;
+      }
+    }
+
+    return false;
   }
 }
 
