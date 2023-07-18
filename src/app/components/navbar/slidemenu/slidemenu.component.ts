@@ -11,11 +11,11 @@ export class SlidemenuComponent implements OnChanges, OnInit, AfterViewInit {
   @ViewChild('slideMenu', { static: false }) slideMenuRef!: ElementRef;
 
   private slideMenuNativeElement!: HTMLDivElement;
+  private activeClassName = 'slide__menu__items__active';
 
   constructor() { }
 
   public ngOnInit(): void {
-    // TODO: add window reference to get screen size;
   }
 
   public ngAfterViewInit(): void {
@@ -29,10 +29,9 @@ export class SlidemenuComponent implements OnChanges, OnInit, AfterViewInit {
   }
 
   public showMenu() {
-    let className = 'slide__menu__items__active';
-    this.slideMenuNativeElement?.classList.contains(className)
-      ? this.slideMenuNativeElement?.classList.remove(className)
-      : this.slideMenuNativeElement?.classList.add(className);
+    this.slideMenuNativeElement?.classList.contains(this.activeClassName)
+      ? this.slideMenuNativeElement?.classList.remove(this.activeClassName)
+      : this.slideMenuNativeElement?.classList.add(this.activeClassName);
   }
 
   private checkPropertyChanges(changes: SimpleChanges, propertyName: string): boolean {
