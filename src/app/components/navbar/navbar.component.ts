@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  public slideMenuIsVisible: boolean = false;
+  @Output() public notifyLayoutEvent = new EventEmitter<boolean>();
 
-  public toogleCheck(hamburguerIsChecked: boolean) {
-    this.slideMenuIsVisible = hamburguerIsChecked;
+  public notifyLayoutComponent(value: boolean) {
+    this.notifyLayoutEvent.emit(value);
   }
 }

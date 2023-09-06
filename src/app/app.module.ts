@@ -13,6 +13,8 @@ import { MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { NavhamburguerbuttonComponent } from './components/navbar/navhamburguerbutton/navhamburguerbutton.component';
 import { SlidemenuComponent } from './components/navbar/slidemenu/slidemenu.component';
 import { CommonModule } from '@angular/common';
+import { LayoutComponent } from './components/layout/layout.component';
+import { LoaderService } from './shared/services/loader.service';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { CommonModule } from '@angular/common';
     SpinnerComponent,
     NavhamburguerbuttonComponent,
     SlidemenuComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,7 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     BrowserModule,
   ],
-  providers: [],
+  providers: [LoaderService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

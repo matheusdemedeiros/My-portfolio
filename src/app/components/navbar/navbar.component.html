@@ -8,8 +8,9 @@
       <app-navbutton [text]="'About me'"></app-navbutton>
       <app-navbutton [text]="'Contact'"></app-navbutton>
     </div>
-    <app-navhamburguerbutton class="navbar__hamburguer__button" (toggleHamburgerCheckEvent)="toogleCheck($event)">
+    <app-navhamburguerbutton
+      (toggleHamburgerCheckEvent)="notifyLayoutComponent($event)"
+      class="navbar__hamburguer__button">
     </app-navhamburguerbutton>
   </div>
 </nav>
-<app-slidemenu [isVisible]="slideMenuIsVisible"></app-slidemenu>

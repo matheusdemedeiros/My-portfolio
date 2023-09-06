@@ -1,0 +1,6 @@
+<app-spinner [spinnerIsLoading]="isLoading">
+    <app-slidemenu [isVisible]="slideMenuIsVisible"></app-slidemenu>
+    <app-navbar (notifyLayoutEvent)="toogleCheck($event)">
+    </app-navbar>
+    <app-home></app-home>
+</app-spinner>
