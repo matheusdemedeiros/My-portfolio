@@ -1,0 +1,25 @@
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.projects__title {
+  font-size: 2rem;
+  font-family: 'Poppins-Bold';
+  width: 100%;
+  text-align: center;
+  color: #4A434A;
+}
+
+.projects__container {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

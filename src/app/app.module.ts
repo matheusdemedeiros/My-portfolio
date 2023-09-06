@@ -15,6 +15,8 @@ import { SlidemenuComponent } from './components/navbar/slidemenu/slidemenu.comp
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './components/layout/layout.component';
 import { LoaderService } from './shared/services/loader.service';
+import { ProjectsComponent } from './components/projects/projetcts.comoponent';
+import { ProjectCardComponent } from './components/projects/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { LoaderService } from './shared/services/loader.service';
     NavhamburguerbuttonComponent,
     SlidemenuComponent,
     LayoutComponent,
+    ProjectsComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
