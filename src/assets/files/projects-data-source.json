@@ -5,6 +5,7 @@
       "projectDescription": "A static page with an image. This is a frontendMentor Challenge",
       "githubRepo": "https://github.com/matheusdemedeiros/CardLayout",
       "hostedIn": "https://matheusdemedeiros.github.io/CardLayout/",
+      "thumbnail": "assets/images/projects/cardlayout-thumbnail.png",
       "technologiesUsed": [{ "techName": "CSS" }, { "techName": "HTML" }]
     },
     {
@@ -12,6 +13,7 @@
       "projectDescription": "Lorem Ipsum",
       "githubRepo": "https://github.com/matheusdemedeiros/My-portfolio",
       "hostedIn": "https://matheus-medeiros.vercel.app/",
+      "thumbnail": "assets/images/projects/cardlayout-thumbnail.png",
       "technologiesUsed": [{ "techName": "CSS" }, { "techName": "HTML" }]
     }
   ],

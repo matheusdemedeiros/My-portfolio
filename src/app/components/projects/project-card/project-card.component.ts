@@ -11,5 +11,6 @@ export class ProjectCardComponent {
   @Input() projectDescription: string = '';
   @Input() githubRepo: string = '';
   @Input() hostedIn: string = '';
+  @Input() projectThumbnail: string = '';
   @Input() technologiesUsed: Tech[] = [];
 }

@@ -3,6 +3,7 @@ export interface Project {
   projectDescription: string;
   githubRepo?: string;
   hostedIn?: string;
+  thumbnail?: string;
   technologiesUsed: Tech[];
 }
 

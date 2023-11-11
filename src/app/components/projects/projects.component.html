@@ -4,10 +4,11 @@
     <app-project-card
       *ngFor="let project of this.projectList"
       [projectName]="project.projectName"
+      [projectDescription]="project.projectDescription"
       [githubRepo]="project.githubRepo!"
       [hostedIn]="project.hostedIn!"
+      [projectThumbnail]="project.thumbnail!"
       [technologiesUsed]="project.technologiesUsed"
-      [projectDescription]="project.projectDescription"
     ></app-project-card>
   </div>
 </section>
