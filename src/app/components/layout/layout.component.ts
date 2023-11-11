@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoaderService } from 'src/app/shared/services/loader.service';
+import { LoaderService } from 'src/app/components/shared/services/loader.service';
 import { tap, map } from 'rxjs';
 
 @Component({
