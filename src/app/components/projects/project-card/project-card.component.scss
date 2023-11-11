@@ -9,7 +9,7 @@
   margin-bottom: 45px;
   border: 3px solid;
   border-color: #7159c1;
-  background-color: #9273FA;
+  background-color: #9273fa;
   border-radius: 15px;
 }
 
@@ -19,8 +19,20 @@
 }
 
 .project__card__description {
-  color: #FFF;
+  color: #fff;
   font-size: 1rem;
-  font-family: 'Poppins-Bold';
+  font-family: "Poppins-Bold";
   text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .project__card {
+    width: 300px;
+    height: 150px;
+  }
+
+  .project__card__image {
+    height: 100px;
+    width: 100px;
+  }
 }
