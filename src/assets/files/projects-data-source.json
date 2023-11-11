@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "projectName": "Card Layout",
+      "projectDescription": "A static page with an image. This is a frontendMentor Challenge",
+      "githubRepo": "https://github.com/matheusdemedeiros/CardLayout",
+      "hostedIn": "https://matheusdemedeiros.github.io/CardLayout/",
+      "technologiesUsed": [{ "techName": "CSS" }, { "techName": "HTML" }]
+    },
+    {
+      "projectName": "Teste",
+      "projectDescription": "Lorem Ipsum",
+      "githubRepo": "https://github.com/matheusdemedeiros/My-portfolio",
+      "hostedIn": "https://matheus-medeiros.vercel.app/",
+      "technologiesUsed": [{ "techName": "CSS" }, { "techName": "HTML" }]
+    }
+  ],
+  "last-update": "2023-11-11T18:23:43.511Z"
+}
