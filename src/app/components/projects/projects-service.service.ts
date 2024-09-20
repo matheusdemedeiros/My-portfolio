@@ -14,13 +14,13 @@ export class ProjectsService {
     this.readProjectsFile();
   }
 
-  readProjectsFile() {
+  public readProjectsFile() {
     this.http.get<ProjectsFile>(this.projectsJsonFile).subscribe((file) => {
       this.projectsSubject.next(file.projects);
     });
   }
 
-  getProjects(): Observable<Project[]> {
+  public getProjects(): Observable<Project[]> {
     return this.projectsSubject.asObservable();
   }
 }
