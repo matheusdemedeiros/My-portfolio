@@ -9,8 +9,16 @@
       "technologiesUsed": [{ "techName": "CSS" }, { "techName": "HTML" }]
     },
     {
-      "projectName": "Teste",
-      "projectDescription": "Lorem Ipsum",
+      "projectName": "Test",
+      "projectDescription": "Lorem Ipsum text for test",
+      "githubRepo": "https://github.com/matheusdemedeiros/My-portfolio",
+      "hostedIn": "https://matheus-medeiros.vercel.app/",
+      "thumbnail": "assets/images/projects/cardlayout-thumbnail.png",
+      "technologiesUsed": [{ "techName": "CSS" }, { "techName": "HTML" }]
+    },
+    {
+      "projectName": "Test 2",
+      "projectDescription": "Lorem Ipsum text for test",
       "githubRepo": "https://github.com/matheusdemedeiros/My-portfolio",
       "hostedIn": "https://matheus-medeiros.vercel.app/",
       "thumbnail": "assets/images/projects/cardlayout-thumbnail.png",
