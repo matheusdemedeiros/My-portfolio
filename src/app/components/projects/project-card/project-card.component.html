@@ -1,12 +1,17 @@
 <div class="project__card">
   <span class="project__card__name">{{ this.projectName }}</span>
-  <img
-    class="project__card__image"
-    [src]="this.projectThumbnail"
-    alt="imagem do projeto"
-  />
+  <img class="project__card__image" [src]="this.projectThumbnail" alt="imagem do projeto" />
+  
+  <!-- transformar em um componente -->
+  <a [href]="this.githubRepo" target="_blank">
+    <button class="github-btn">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"
+        class="github-icon">
+      Ver no GitHub
+    </button>
+  </a>
+  
   <span class="project__card__description">{{ this.projectDescription }}</span>
-  <span class="project__card__githubRepo">Git: {{ this.githubRepo }}</span>
   <span class="project__card__hostedIn">Demo: {{ this.hostedIn }}</span>
   <!-- <span class="project__card__technologiesUsed">{{ this.technologiesUsed }}</span> -->
 </div>
